@@ -10,9 +10,6 @@ export default function Nav() {
     setDrop(prevState => !prevState)
   }
       
-     
-
-
     return (
             <nav role='navigation'>
                 <div className='home--logo--div'>
@@ -25,12 +22,16 @@ export default function Nav() {
                         </Link>
                     </div>
                     
-                <div className='dropdown'>
+                <div className='nav--categories'>
              
                     <div className='webDev'>
                         <button className='nav--button'>
                             <Link className='nav--a' to='/WebDevelopment'>
-                                <img className='nav--category--icon' src='images/icons/webDev.png' alt='webdevIcon'/>
+                                <img 
+                                    className='nav--category--icon' 
+                                    src='images/icons/webDev.png' 
+                                    alt='webdevIcon'
+                                />
                             </Link>
                         </button>  
                     </div>
@@ -46,7 +47,8 @@ export default function Nav() {
                             <img 
                                 className='nav--category--icon' 
                                 src='images/icons/portfolio.png' 
-                                alt='portfolioIcon'/> 
+                                alt='portfolioIcon'
+                            /> 
                         </button>
                           
                             {
@@ -55,7 +57,8 @@ export default function Nav() {
                                     id='dropdown--div--id' 
                                     className='dropdown--div' 
                                     onClick={()=> setDrop(!dropShow)}
-                                    onBlur={() => setDrop(false)}>
+                                    onBlur={() => setDrop(false)}
+                                >
 
                                     <Link className='nav--dropdown--a' to={'Anders'}>
                                         <img 
@@ -67,29 +70,29 @@ export default function Nav() {
                                     </Link>
                         
                                     <Link className='nav--dropdown--a' to='Jerven'>
-                                    <img 
-                                        className='page-icon' 
-                                        src='images/icons/jerven.png' 
-                                        alt='jervenIcon'
-                                    />
-                                         <h3>Jerven</h3>
+                                        <img 
+                                            className='page-icon' 
+                                            src='images/icons/jerven.png' 
+                                            alt='jervenIcon'
+                                        />
+                                        <h3>Jerven</h3>
                                     </Link>
                           
                                     <Link className='nav--dropdown--a' to='Characters'>
-                                    <img 
-                                        className='page-icon' 
-                                        src='images/icons/character.png' 
-                                        alt='characterIcon'
-                                    />
-                                         <h3>Karakterer</h3>
+                                        <img 
+                                            className='page-icon' 
+                                            src='images/icons/character.png' 
+                                            alt='characterIcon'
+                                        />
+                                        <h3>Karakterer</h3>
                                    </Link>
                           
                                     <Link className='nav--dropdown--a' to='Caricature'>
-                                    <img 
-                                        className='page-icon' 
-                                        src='images/icons/caricature.png' 
-                                        alt='caricatureIcon'
-                                    />
+                                        <img 
+                                            className='page-icon' 
+                                            src='images/icons/caricature.png' 
+                                            alt='caricatureIcon'
+                                        />
                                         <h3>Karikatur</h3>
                                    </Link>
                          
@@ -116,9 +119,13 @@ export default function Nav() {
                     <div className='about'>
                         <button className='nav--button'>
                             <Link className='nav--a' to='/About'>
-                             <img className='nav--category--icon' src='images/icons/about.png' alt='about_icon.png'/>
+                                <img 
+                                    className='nav--category--icon' 
+                                    src='images/icons/about.png' 
+                                    alt='about_icon.png'
+                                />
                             </Link>
-                            </button> 
+                        </button> 
                     </div>
 
                 </div>

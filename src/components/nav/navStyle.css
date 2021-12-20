@@ -177,7 +177,7 @@ nav {
   padding: 5px;
 }
 
-.dropdown {
+.nav--categories {
   display: flex;
   position: relative;
   width: 100%;
@@ -289,7 +289,7 @@ nav {
     padding: 3px;
   }
 
-  .dropdown {
+  .nav--categories {
     justify-content: right;
   }
 
@@ -322,7 +322,7 @@ nav {
     max-width: 60px;
   }
 
-  .dropdown .nav--category--icon {
+  .nav--categories .nav--category--icon {
     width: 50px;
   }
 

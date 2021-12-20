@@ -1,0 +1,15 @@
+.webDev--container {
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  flex-direction: row;
+  float: left;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 500px;
+  padding-top: 150px;
+  margin: 0;
+  background: #23252c;
+  margin: 0 auto;
+}

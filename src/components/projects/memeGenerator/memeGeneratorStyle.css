@@ -1,0 +1,180 @@
+/*MEME-GENERATOR-COMPONENT*/
+.meme--container {
+  margin-top: 50px;
+}
+
+.meme--generator--header {
+  top: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.meme--generator--header--title {
+  color: white;
+  font-family: VT323, monospace;
+  padding-left: 10px;
+}
+
+.meme--generator--header--img {
+  max-width: 100px;
+  align-self: center;
+  margin: 0;
+}
+
+.meme {
+  position: relative;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.meme-link {
+  grid-area: 2/1 / 2/1;
+
+  margin: auto;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  position: relative;
+  flex-flow: wrap;
+  box-shadow: 5px 5px 20px rgba(119, 145, 148, 0.8);
+  justify-content: space-evenly;
+  width: 200px;
+  height: 300px;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-size: cover;
+  background-color: black;
+  background-image: url("http://www.pngall.com/wp-content/uploads/2016/05/Trollface.png");
+  background-size: 160px;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.meme-h2 {
+  margin: 140px auto;
+  position: relative;
+  width: inherit;
+  text-align: center;
+  padding: 5px;
+}
+
+.meme > img {
+  position: relative;
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.meme > h2 {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 15px 0;
+  padding: 0 5px;
+  font-family: impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
+    -2px 2px 0 #000, 0 2px 0 #000, 2px 0 0 #000, 0 -2px 0 #000, -2px 0 0 #000,
+    2px 2px 5px #000;
+}
+
+.meme > .bottom {
+  bottom: 0;
+}
+
+.meme > .top {
+  top: 0;
+}
+
+.meme-form {
+  width: 90%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.meme-form > input {
+  width: 45%;
+  height: 40px;
+  border: 2px solid white;
+  border-radius: 20px;
+  border-style: none;
+}
+
+.meme-form > button {
+  border: none;
+  font-family: VT323, monospace;
+  font-size: 25px;
+  letter-spacing: 1.5px;
+  color: white;
+  background: #6441a5;
+  width: 345px;
+  margin: 10px auto;
+  padding: 20px;
+}
+
+.meme-form > input::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  font-family: VT323, monospace;
+  font-size: 25px;
+  text-align: cen;
+}
+.meme-form > input::-moz-placeholder {
+  /* Firefox 19+ */
+  font-family: VT323, monospace;
+  font-size: 25px;
+  text-align: cen;
+}
+.meme-form > input:-ms-input-placeholder {
+  /* IE 10+ */
+  font-family: VT323, monospace;
+  font-size: 25px;
+  text-align: cen;
+}
+.meme-form > input:-moz-placeholder {
+  /* Firefox 18- */
+  font-family: VT323, monospace;
+  font-size: 25px;
+  text-align: cen;
+}
+
+/*MEME-GENERATOR-HEADER*/
+
+header {
+  position: relative;
+  top: -10px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  background: #6441a5; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #2a0845,
+    #6441a5
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #2a0845,
+    #6441a5
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+header > img {
+  height: 80%;
+  margin: auto;
+}
+
+header > p {
+  font-family: VT323, monospace;
+  color: whitesmoke;
+  font-size: 50px;
+  margin-left: 60px;
+}

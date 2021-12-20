@@ -1,0 +1,107 @@
+/*CARD-COMPONENT*/
+
+.img--cards--container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 100px 0px;
+}
+.img--cards--category {
+  display: flex;
+  position: relative;
+  top: 10px;
+  width: 100%;
+  min-height: 10vh;
+  max-height: 30vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.img--cards--category--title {
+  font-size: 80px;
+  font-family: "Shadows Into Light", cursive;
+  color: white;
+  text-shadow: 3px 2px 3px black;
+  text-rendering: optimizeLegibility;
+}
+
+.img--card--container {
+  display: inline-flex;
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 5px;
+  border: 2px solid rgba(0, 0, 0, 1);
+  box-shadow: 2px 2px 10px black;
+  background: #f776ab;
+  transition: ease 0.2s;
+  padding: 0;
+}
+
+.img--card--container:hover {
+  transition: cubic-bezier(0.1, 0.96, 0.47, 1.64) 0.2s;
+  border: 2px solid rgba(0, 0, 0, 1);
+  border-radius: 20px;
+}
+
+.img--card--container:hover .card--title {
+  color: white;
+}
+
+.card--a {
+  width: inherit;
+  height: inherit;
+  overflow: hidden;
+  transition: 0.2s;
+  margin: 0;
+  padding: 0;
+  border-radius: 1px;
+}
+
+.card--a:hover .card-title {
+  color: white;
+}
+
+.card--a:active {
+  transition: 0.1s;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.img--content--container {
+  display: flex;
+  width: inherit;
+  margin: 0;
+  transition: ease 0.5s;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card--img {
+  position: relative;
+  margin: 0 auto;
+  border: 2px solid rgba(0, 0, 0, 0);
+  transition: 0.2s;
+  top: 5px;
+  object-fit: contain;
+  width: 200px;
+  height: 200px;
+}
+
+.card--title {
+  width: 100%;
+  font-size: auto;
+  font-family: "Shadows Into Light", cursive;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px;
+  color: black;
+}

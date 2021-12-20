@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #62cece;
+  font-size: 100%;
+}
+
+#root {
+  width: 100%;
+}
+
+.app {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "nav"
+    "main"
+    "footer";
+}
+
+.main {
+  width: 100%;
+  position: relative;
+  grid-area: main;
+  min-height: 100vh;
+  padding-bottom: 0%;
+}

@@ -1,0 +1,33 @@
+/*TRAVEL JOURNAL COMPONENT*/
+
+.travelJournal--nav {
+  width: 100%;
+  background-image: tomato;
+  position: relative;
+  top: 100px;
+}
+
+/*TRAVEL--JOURNAL--COMPONENT*/
+
+.travelJournal--link {
+  grid-area: 4/1 / 4/1;
+  display: flex;
+  margin: auto;
+  width: 200px;
+  height: 300px;
+  background: #fff;
+  border: 2px solid black;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.travel--link--img {
+  object-fit: fill;
+  width: 200px;
+  height: auto;
+}
+
+.travelCard--component {
+  position: relative;
+  top: 100px;
+}

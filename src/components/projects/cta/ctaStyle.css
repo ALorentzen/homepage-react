@@ -1,0 +1,58 @@
+/*CTA-COMPONENT*/
+
+.cta-container {
+  grid-area: 2/2 / 2/2;
+
+  display: flex;
+  position: relative;
+  flex-flow: wrap;
+  overflow: hidden;
+  justify-content: space-evenly;
+  align-items: center;
+
+  width: 200px;
+  height: 300px;
+  margin: 0 auto;
+  border: 2px solid black;
+  border-radius: 10px;
+
+  background-size: cover;
+  background-color: crimson;
+  background-size: 160px;
+  background-repeat: no-repeat;
+  background-position: top;
+  box-shadow: 5px 5px 20px rgba(119, 145, 148, 0.8);
+
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  text-shadow: 2px 2px 2px darkslategray;
+  font-family: VT323, monospace;
+
+  overflow-y: scroll;
+}
+
+.border,
+h1,
+button {
+  padding: 5px;
+  margin: 2px;
+}
+
+.cta-div {
+  border: 2px solid white;
+  margin: 5px;
+}
+
+.cta-form {
+  position: relative;
+  background: slategray;
+  border: 2px solid black;
+  width: 100%;
+  margin: auto;
+  padding: 25px;
+}
+
+.cta-form input {
+  width: 95px;
+}

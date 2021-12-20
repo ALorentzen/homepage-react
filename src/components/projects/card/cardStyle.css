@@ -1,0 +1,28 @@
+/*CARD-COMPONENT*/
+
+.card-container {
+  width: 200px;
+  height: 300px;
+  position: relative;
+  background: #fff;
+  border: 2px solid black;
+  border-radius: 15px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  margin: 10px 10px;
+}
+
+.card-content {
+  margin: 50% auto;
+  justify-content: space-around;
+  align-content: center;
+  display: flex;
+}
+
+.link {
+  background: lightblue;
+  width: 200px;
+  height: 300px;
+  border-radius: 15px;
+  border: 2px solid black;
+}

@@ -1,0 +1,245 @@
+/*ABOUT--PAGE*/
+
+.business--card--container {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.card--content {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  width: 100%;
+  margin: 0px 0px 0 0px;
+  margin-bottom: 100%;
+  padding-top: 70px;
+  background: #1a1b21;
+  overflow: visible;
+}
+
+.button--div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 42px 0;
+}
+
+.card--content > button {
+  display: inline-block;
+  margin: 10px auto;
+}
+
+.button--email > a,
+.button--website > a {
+  color: black;
+  font-size: 15px;
+  width: 100px;
+}
+
+.button--website,
+.button-email {
+  border-style: none;
+}
+
+.button--website {
+  background-color: #7281b4;
+}
+
+.business--card--textDiv {
+  padding: 2px 0 67px 0px;
+  margin: 0;
+}
+
+.business--card--textDiv p {
+  padding: 0px 20px;
+}
+
+.business--card--textDiv > h3,
+p {
+  text-align: center;
+  color: white;
+  line-height: 2rem;
+}
+
+.business--card--img--container {
+  position: relative;
+  width: 100%;
+  height: min-content;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.business--card--img--container > h2,
+h4 {
+  text-align: center;
+}
+
+.business--card--name {
+  color: white;
+  padding: 10px;
+}
+.business--card--description {
+  color: #f3bf99;
+  padding: 0 20px;
+}
+
+.business--card--img {
+  display: block;
+  width: 150px;
+  margin: 0 auto;
+}
+
+.card--content > button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 115px;
+  height: 34px;
+  margin: 10px 10px;
+}
+
+.business--card--footer {
+  display: flex;
+  width: 100%;
+  margin: 0;
+  padding: 15px;
+  background: #161619;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+}
+
+.business--card--footer > .footer--logo-link img {
+  display: inline-block;
+  object-fit: contain;
+  width: 40px;
+  height: 40px;
+  filter: grayscale(1);
+}
+
+.business--card--footer > .footer--logo-link:hover img {
+  filter: grayscale(0);
+}
+
+.business--card--footer > a,
+.footer--logo-link {
+  display: flex;
+  width: 60px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer--logo-link:hover::after {
+  content: "email";
+  position: absolute;
+  background: white;
+  color: black;
+  top: 100%;
+  padding: 2%;
+}
+
+#footer--logo--img--email:hover::after {
+  content: "email";
+  position: absolute;
+  background: white;
+  color: black;
+  top: 100%;
+  padding: 2%;
+}
+
+#footer--logo--img--discord:hover::after {
+  content: "discord";
+  position: absolute;
+  background: white;
+  color: black;
+  top: 100%;
+  padding: 2%;
+}
+
+#footer--logo--img--instagram:hover::after {
+  content: "instagram";
+  position: absolute;
+  background: white;
+  color: black;
+  top: 100%;
+  padding: 2%;
+}
+
+#footer--logo--img--linkedIn:hover::after {
+  content: "linkedIn";
+  position: absolute;
+  background: white;
+  color: black;
+  top: 100%;
+  padding: 2%;
+}
+
+@media only screen and (min-device-width: 700px) {
+  .card--content {
+    height: auto;
+  }
+
+  .business--card--img {
+    width: 200px;
+  }
+
+  .business--card--footer {
+    width: 270px;
+    justify-content: center;
+  }
+
+  .business--card--footer > .footer--logo-link img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .business--card--textDiv {
+    width: 100%;
+    padding: 5% 25%;
+  }
+}
+
+@media only screen and (min-device-width: 1200px) {
+  .business--card--container {
+    justify-content: center;
+  }
+  .card--content {
+    width: 30%;
+    height: 50%;
+    top: 5%;
+    padding-top: 3%;
+  }
+
+  .business--card--img {
+    width: 300px;
+  }
+
+  .button--div {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    height: fit-content;
+    position: relative;
+    top: -4%;
+  }
+
+  .business--card--textDiv {
+    width: 100%;
+    padding: 0 5%;
+    top: -81px;
+    position: relative;
+  }
+
+  .business--card--footer {
+    width: 80%;
+    justify-content: center;
+  }
+}

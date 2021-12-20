@@ -1,0 +1,54 @@
+/*CALLOUT-COMPONENT*/
+
+.callout-container {
+  grid-area: 3/2 / 3/2;
+
+  display: flex;
+  position: relative;
+  flex-flow: wrap;
+  overflow: hidden;
+  justify-content: space-evenly;
+  align-items: center;
+
+  width: 200px;
+  height: 300px;
+  margin: 0 auto;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+
+  background-size: cover;
+  background-color: lightseagreen;
+  background-size: 160px;
+  background-repeat: no-repeat;
+  background-position: top;
+  box-shadow: 5px 5px 20px rgba(119, 145, 148, 0.8);
+
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  text-shadow: 2px 2px 2px darkslategray;
+  font-family: VT323, monospace;
+  overflow-y: scroll;
+}
+
+.callout {
+  border: 2px solid white;
+  background: lightskyblue;
+  margin: 5px;
+}
+
+.callout,
+p h2 figcaption input button {
+  font-size: 12px !important;
+  width: 90%;
+  margin: 10px;
+  padding: 0;
+  text-overflow: clip;
+  text-size-adjust: auto;
+}
+.callout-email {
+  border: 0px white;
+  border-radius: 0;
+  width: 90%;
+}

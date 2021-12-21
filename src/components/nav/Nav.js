@@ -9,6 +9,12 @@ export default function Nav() {
   function handleClick(e) {
     setDrop(prevState => !prevState)
   }
+
+  function handleBlur(e) {
+      if (e?.relatedTarget?.className !== 'nav--dropdown--a') {
+          setDrop(false)
+      }
+  }
       
     return (
             <nav role='navigation'>
@@ -36,7 +42,9 @@ export default function Nav() {
                         </button>  
                     </div>
 
-                    <div className='portfolio' >
+                    <div className='portfolio'
+                        onBlur={handleBlur}
+                    >
 
                         <button 
                             id='nav--portfolio--button' 

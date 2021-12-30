@@ -13,11 +13,14 @@ export default function Nav() {
   function handleBlur(e) {
       if (e?.relatedTarget?.className !== 'nav--dropdown--a') {
           setDrop(false)
+          const portfolioDrop = document.getElementById('dropdown--div--id')
+          portfolioDrop.style.transition = "2s"
       }
   }
+
       
     return (
-            <nav role='navigation'>
+            <nav id='nav' role='navigation' >
                 <div className='home--logo--div'>
                         <Link className='home--logo--link' to='/'>
                             <img 
@@ -43,7 +46,7 @@ export default function Nav() {
                     </div>
 
                     <div className='portfolio'
-                        onBlur={handleBlur}
+                         onBlur={handleBlur}
                     >
 
                         <button 

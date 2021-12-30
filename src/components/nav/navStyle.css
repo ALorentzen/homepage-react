@@ -293,6 +293,18 @@ nav {
     justify-content: right;
   }
 
+  .webDev:hover::after {
+    content: "web development";
+    color: wheat;
+    position: absolute;
+    z-index: 1000;
+    margin: 0 auto;
+    top: 17px;
+    right: 69px;
+    font-size: 25px;
+    width: 200px;
+  }
+
   .nav--portfolio--button {
     position: relative;
     width: 100%;
@@ -302,10 +314,21 @@ nav {
     margin: 0;
     background: none;
     border-style: none;
+    cursor: pointer;
   }
 
   .nav--portfolio--button:hover .nav--category--icon {
     filter: invert(0%);
+  }
+
+  .nav--portfolio--button:hover::after {
+    position: absolute;
+    content: "portfolio";
+    z-index: 1000;
+    margin: 0 auto;
+    top: 17px;
+    right: 120px;
+    color: wheat;
   }
 
   .portfolio:focus + .show li:hover .nav--category--icon {
@@ -314,6 +337,18 @@ nav {
 
   .portfolio:hover .nav--category--icon {
     filter: invert(0%);
+  }
+
+  .about:hover::after {
+    content: "about";
+    color: wheat;
+    position: absolute;
+    z-index: 1000;
+    margin: 0 auto;
+    top: 17px;
+    right: 186px;
+    font-size: 25px;
+    width: 100%;
   }
 
   .webDev,

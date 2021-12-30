@@ -1,5 +1,5 @@
-export default  
- [
+
+  const boxList = [
     {
         id: 1,
         on: true
@@ -25,3 +25,5 @@ export default
         on: false
     }
 ]
+
+export default boxList

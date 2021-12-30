@@ -1,6 +1,10 @@
     import React from 'react'
     import './webDevelopmentStyle.css'
-    import {  AddItem, Card, Counter, RoundedImg, Todo, CTA, Callout, ChangeBoxes } from '../../../index' 
+    import {  AddItem, Card, Counter, 
+              RoundedImg, Todo, CTA,
+              Callout, ChangeBoxes
+            } 
+    from '../../../index' 
     
         import { Link } from 'react-router-dom'
 
@@ -19,11 +23,12 @@
 
                 <div className='card-container'>
                     <Link className='travel--link' to='/TravelForm'>
-                    <h1 className='link--header'>Travel form</h1>
-                    <img className='travel--container--bckr'
-                                 src='/images/background_images/photo-1436491865332-7a61a109cc05.jpg' 
-                                 alt='flight'/>
-                        
+                        <h1 className='link--header'>Travel form</h1>
+                        <img 
+                            className='travel--container--bckr'
+                            src='/images/background_images/photo-1436491865332-7a61a109cc05.jpg' 
+                            alt='flight'
+                        /> 
                     </Link>
                 </div>
 
@@ -48,7 +53,6 @@
                 </div>
 
                 <div className='card-container'>
-
                     <Callout>
                         <h2>This is a {`<Callout>`} component w/ React children </h2>
                         <p>Email, Image and Info </p>
@@ -91,6 +95,10 @@
 
                <div className='card-container'>
                     <ChangeBoxes />
+                </div>
+
+                <div className='card-container'>
+                    <Link className='form--component--link' to='/Form' >Form</Link> 
                 </div>
             </div>
         )

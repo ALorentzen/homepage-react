@@ -4,8 +4,17 @@ import andersList from './anders--img'
 
 
 export default function Anders(){
+         window.andersList = []
+
+         var preloadedData = andersList.map((id) => {
+               const img = new Image()
+               img.src = andersList.title
+               return img
+         })
+         window.andersList.preloadedPictures = preloadedData
 
       const cards = andersList.map(item => {
+            
             return (
                 <ImageCard
                       key={item.id}
@@ -13,15 +22,17 @@ export default function Anders(){
                       src={item.src}
                       title={item.title}
                 /> 
+                
             )    
           })
     
           return (
+         
             <div className='img--cards--container'>
                   <div className='img--cards--category'>
-                        <h3 className='img--cards--category--title'>Anders</h3>
+                        <h3 onLoad={()=> window.load='eager'} className='img--cards--category--title'>Anders</h3>
                   </div>
-                  {cards}
+                  {cards.sort(ImageCard.title)}
             </div>
           )
     }

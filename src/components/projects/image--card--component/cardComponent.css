@@ -15,6 +15,7 @@
   max-height: 30vh;
   align-items: center;
   justify-content: center;
+  cursor: default;
 }
 
 .img--cards--category--title {

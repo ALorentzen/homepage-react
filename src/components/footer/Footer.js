@@ -2,17 +2,23 @@ import React from 'react'
 import './footerStyle.css'
 
 function Footer() {
+
+    function smoothScroll() {
+        const mouRan = document.querySelector('.svg--div')
+        mouRan.style.transition="0.3s"
+        mouRan.style.bottom='0';
+    }
+
     return (
         <footer>
             <div className='footer--container'>
-                <div className="svg--div">
-                    <img 
-                        className="svg--img" 
-                        src='./images/footer_svg/layered-waves-haikei2.svg'
-                        alt='waves-svg'
-                    />
-                </div>
-                
+                <img 
+                    className='svg--img' 
+                    src='./images/footer_svg/mountainRange.svg'
+                    embed='./images/footer_svg/mountainRange.svg'
+                    alt="sad" 
+                    onScroll={smoothScroll} 
+                />
                 <div className='footer--credits--container'> 
                     <div className="signature">
                         <h3 id='name'>Anders Lorentzen</h3>

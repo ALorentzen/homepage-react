@@ -18,6 +18,7 @@ export { default as AddItem } from './components/projects/AddItem/AddItem'
 export { default as AirBnb } from './components/projects/airBnB/AirBnb'
 export { default as ImageCard } from './components/projects/image--card--component/ImageCard'
 export { default as ChangeBoxes } from './components/projects/changeBoxes/ChangeBoxes'
+export { default as Form } from './components/projects/form/Form'
 
 export { default as Nav} from './components/nav/Nav'
 export { default as Footer} from './components/footer/Footer'

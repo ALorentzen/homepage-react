@@ -12,10 +12,11 @@ export default function Nav() {
 
   function handleBlur(e) {
       if (e?.relatedTarget?.className !== 'nav--dropdown--a') {
-          setDrop(false)
-          const portfolioDrop = document.getElementById('dropdown--div--id')
-          portfolioDrop.style.transition = "2s"
-      }
+            document.querySelector(".dropdown--div").style.animation = "dropdownReverse 0.5s 1"  
+
+        } 
+          
+     
   }
 
       

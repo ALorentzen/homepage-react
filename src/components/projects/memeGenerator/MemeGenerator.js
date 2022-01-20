@@ -1,78 +1,69 @@
-import React, {Component} from 'react'
-import Header from './Header'
+import React from 'react'
 import './memeGeneratorStyle.css'
+import memesData from "./memesData.js"
 
-class MemeGenerator extends Component {
-    constructor() {
-        super()
-        this.state = {
-            topText : "",
-            botText : "",
-            randImg : "http://i.imgflip.com/1bij.jpg",
-            allMemeImgs : [] 
-        }
-        this.handleChange = this.handleChange.bind(this)
-        this.handleSubmit = this.handleSubmit.bind(this)
+export default function Meme() {
+    
+    const [meme, setMeme] = React.useState(
+    {
+        topText: "",
+        bottomText: "",
+        randomImage: "http://i.imgflip.com/1bij.jpg" 
     }
-
-
-    componentDidMount() {
-        fetch('https://api.imgflip.com/get_memes')
-        .then(response => response.json())
-        .then(response => {
-            const {memes} = response.data
-            console.log(memes[0])
-            this.setState({allMemeImgs : memes })
-        }) 
+    )
+    const [allMemeImages, setAllMemeImages] = React.useState(memesData)
+    
+    
+    function getMemeImage() {
+        const memesArray = allMemeImages.data.memes
+        const randomNumber = Math.floor(Math.random() * memesArray.length)
+        const url = memesArray[randomNumber].url
+        setMeme(prevMeme => ({
+            ...prevMeme,
+            randomImage: url
+        }))
+        
     }
-
-    handleChange(event) {
-     const {name, value} = event.target
-     this.setState({ [name] : value })
+    
+    function handleChange(event) {
+        const {name, value} = event.target
+        setMeme(prevMeme => ({
+            ...prevMeme,
+            [name]: value
+        }))
     }
-
-    handleSubmit(event) {
-        event.preventDefault()
-
-        const randNum = Math.floor(Math.random() * this.state.allMemeImgs.length)
-        const randMemeImg = this.state.allMemeImgs[randNum].url
-        this.setState({ randImg: randMemeImg})
-    }
-
-    render() {
-        return(
-            <div className='meme--container'>
-                <Header />
-                <form className='meme-form' onSubmit={this.handleSubmit}>
-                
-                    <input
-                        name='topText'
-                        value={this.state.topText}
-                        type='text'
-                        placeholder='Top text'
-                        onChange={this.handleChange}
-                    />
-                                 
-                    <input
-                        name='botText'
-                        value={this.state.botText}
-                        type='text'
-                        placeholder='Bottom text'
-                        onChange={this.handleChange}
-                    />
-               
-                <button>Get new image</button>
-                </form>
-                <div className='meme'>
-                    <img src={this.state.randImg} alt=''/>
-                    <h2 className='top'>{this.state.topText}</h2>
-                    <h2 className='bottom'>{this.state.botText}</h2>
-                </div>
+    
+    return (
+        <main>
+            <div className="form">
+                <input 
+                    type="text"
+                    placeholder="Top text"
+                    className="form--input"
+                    name="topText"
+                    value={meme.topText}
+                    onChange={handleChange}
+                />
+                <input 
+                    type="text"
+                    placeholder="Bottom text"
+                    className="form--input"
+                    name="bottomText"
+                    value={meme.bottomText}
+                    onChange={handleChange}
+                />
+                <button 
+                    className="form--button"
+                    onClick={getMemeImage}
+                >
+                    Get a new meme image 🖼
+                </button>
             </div>
-  
-        )
-    }
-
+            <div className="meme">
+                <img src={meme.randomImage} className="meme--image" />
+                <h2 className="meme--text top">{meme.topText}</h2>
+                <h2 className="meme--text bottom">{meme.bottomText}</h2>
+            </div>
+        </main>
+    )
 }
-
-export default MemeGenerator

@@ -32,9 +32,10 @@
                     </Link>
                 </div>
 
-                <div className='card-container'>
+                <div id="card--container--meme--div" className='card-container'>
                     <Link className='meme-link' to='/MemeGenerator'>
-                        <h2 className='meme-h2'>meme generator</h2>
+                        <h2 className='meme--h2'>meme generator</h2>
+                        <img  className='meme-logo-img'src="/images/unsorted/rinrrbyBT.png" />
                     </Link>
                 </div>
 
@@ -72,10 +73,14 @@
                 </div>
 
                 <div className='card-container'>
-                    <RoundedImg className='rounded-img-container' src='./images/portfolio/characters/whistle.png' borderRadius={80} />
+                    <RoundedImg 
+                        className='rounded-img-container' 
+                        src='./images/portfolio/characters/whistle.png' 
+                        borderRadius={80} 
+                    />
                 </div>
 
-                <div className='card-container'>
+                <div id="todo--container" className='card-container'>
                     <Todo />
                 </div>
 
@@ -99,6 +104,10 @@
 
                 <div className='card-container'>
                     <Link className='form--component--link' to='/Form' >Form</Link> 
+                </div>
+
+                <div className='card-container'>
+                    <Link className='form--component--link' to='/ExerciseForm' >test form</Link> 
                 </div>
             </div>
         )

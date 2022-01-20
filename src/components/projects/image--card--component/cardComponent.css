@@ -71,9 +71,10 @@
   transition: 0.1s;
 }
 
-a:link {
-  text-decoration: none;
+.meme-link {
+  height: 299px;
 }
+
 
 .img--content--container {
   display: flex;

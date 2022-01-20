@@ -11,7 +11,7 @@
 }
 
 .form--component--main--form {
-  display: flex;
+  display: block;
   position: relative;
   justify-content: center;
   width: 100%;
@@ -19,13 +19,164 @@
   background-color: tomato;
   height: inherit;
   justify-self: center;
+  border-radius: 0;
 }
 
-.form--component--input {
+.form--component--input, .form--component--textfield {
+  display: flex;
   border: 2px solid black;
   border-radius: 20px;
+  min-width: 40%;
+  min-height: 50px;
+  font-size: 1.2rem;
+}
+
+.form--component--textfield {
+  display: flex;
+  position: relative;
+  height: 250px;
+  margin: 0 auto;
+  padding: 10px;
+
 }
 
 .form--component--link:visited {
   color: black;
+}
+
+.form--checkbox--div {
+  display: flex;
+  position: relative;
+  margin: 10px auto;
+  padding: 1%;
+  width: 40%;
+  justify-content: center;
+}
+
+#isCorrect {
+  margin: 0;
+}
+
+.form--fieldset {
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 40%;
+  margin: 0 auto;
+  padding: 1%;
+}
+
+#unemployed + #part-time + #full-time {
+  padding: 10%;
+  margin-left: 10px;
+}
+
+.form--component--label {
+  padding-left: 10px;
+}
+
+#education-lv {
+  display: flex;
+  width: 40%;
+  margin: 0 auto;
+  border: 2px solid black;
+  font-size: 18px;
+  padding-left: 8px;
+}
+
+.education--fieldset {
+  border: 2px solid black;
+  width: 40%;
+  margin: 0 auto;
+  border-radius: 10px;
+  padding: 1%;
+}
+
+legend {
+  color: white;
+  font: inter verdana;
+  font-weight: bolder;
+}
+
+.form--header--isCorrect{
+  font-weight: lighter;
+  padding-left: 10px;
+}
+
+.form--checkbox--isCorrect--label {
+  padding: 0;
+}
+
+.form--submit--button {
+  margin: 0 auto;
+  display: block;
+  width: 200px;
+  height: 50px;
+  border: 2px solid black;
+  border-radius: 10px;
+  font-family: inter;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+.form--submit--button:active {
+  border: 0.5px solid black;
+  background: white;
+  font-size: 1.4rem;
+}
+
+/*EXERCISE FORM*/
+
+.exer--div--form {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #456;   
+}
+
+.exer--form {
+  background-color: white;
+  padding: 50px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 5px 5px 15px -1px rgba(0,0,0,0.75);
+}
+
+.exer--form--input--fields {
+  width: 100%;
+  margin-bottom: 20px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid grey;
+  padding: 5px;
+  font-family: 'Inter', sans-serif;   
+}
+
+.exer--form--confirm--div {
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+#submit--user--form {
+  width: 50%;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  background-color: #456;
+  border: none;
+  cursor: pointer;
+}
+
+.exer--form--button {
+  width: 50%;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  background-color: #456;
+  border: none;
+  cursor: pointer;
 }

@@ -1,5 +1,6 @@
-
+import React from 'react'
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom"
+import ExerciseForm from "./components/projects/form/ExerciseForm"
 import { 
         Nav, Home, WebDevelopment,
         Portfolio, About, Anders, 
@@ -29,6 +30,7 @@ export default function App() {
                                 <Link path='/TravelComponent' element={<TravelComponent />}/>
                                 <Link path='/ChangeBoxes' element={<ChangeBoxes /> }/>
                                 <Link path='/Form' element={<Form />}/>
+                                <Link path='/ExerciseForm' element={<ExerciseForm /> }/>
                             <Route path='/Portfolio' element={<Portfolio />} />
                                 <Route path='/Anders' element={<Anders />}  />
                                 <Route path='/Caricature' element={<Caricature />} />

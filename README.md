@@ -1,6 +1,10 @@
 
+****** IMPORTANT! ******  
+
 If 'react-scripts' is not recognized as an internal or external command, operable program or batch file, 
 type: npm install react-scripts --save
+
+************************
 
 # Getting Started with Create React App
 

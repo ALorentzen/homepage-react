@@ -12,11 +12,8 @@ export default function Nav() {
 
   function handleBlur(e) {
       if (e?.relatedTarget?.className !== 'nav--dropdown--a') {
-            document.querySelector(".dropdown--div").style.animation = "dropdownReverse 0.5s 1"  
-
+            setDrop(false)
         } 
-          
-     
   }
 
       

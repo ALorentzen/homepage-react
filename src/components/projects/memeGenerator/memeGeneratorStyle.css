@@ -38,30 +38,52 @@
   font-weight: 500;
 }
 
-.form {
+.meme--form {
   display: grid;
   position: relative;
   top: 120px;
-  grid-template: 40px 40px / 1fr 1fr;
+  grid-template-areas: 
+  'inputTop inputBot'
+  ' imageButton imageButton';
   gap: 17px;
-  margin-bottom: 17px;
+  grid-template: auto;
+  background: #1e2833;
+  padding: 10px;
 }
 
-.form--input {
+.meme--form--input {
   font-family: "Karla", sans-serif;
+  font-size: 2em;
   border-radius: 5px;
   border: 1px solid #D5D4D8;
   text-indent: 5px;
+  height: 40px;
+  width: 100%;
+  display: inline-flex;
 }
 
-.form--button {
-  grid-column: 1 / -1;
+#top-text {
+  grid-area: inputTop;
+}
+
+#bottom-text {
+ grid-area: inputBot;
+}
+
+.meme--form--button {
+  grid-area: imageButton;
+  position: relative;
+  font-size: 1.5em;
   font-family: "Karla", sans-serif;
   border-radius: 5px;
   background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
   color: white;
   border: none;
   cursor: pointer;
+  padding: 20px;
+  min-width: 30%;
+  max-width: 100%;
+
 }
 
 .meme {
@@ -85,6 +107,7 @@
   position: relative;
   max-width: 100%;
   border-radius: 3px;
+  border: 2px solid black;
   margin: 0 auto;
 }
 

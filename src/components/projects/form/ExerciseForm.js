@@ -21,7 +21,7 @@ export default function ExerciseForm() {
 
     function handleSubmit(event) {
         const sent = document.querySelector(".exer--form--button")
-        const submit = document.querySelector(".exer--form--button")
+
   
         event.preventDefault()
         if(formData.password === formData.confirmPassword) {

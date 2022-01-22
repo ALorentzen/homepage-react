@@ -806,4 +806,6 @@ const memesData =  {
         ]
     }
 }
+
+export default memesData
     

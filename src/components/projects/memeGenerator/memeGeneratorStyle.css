@@ -56,6 +56,8 @@
   width: 100%;
   margin: 0 auto;
   padding: 0 20% 0 20%;
+  border-radius: 4px;
+  box-shadow: 10px 33px 5px rgb(0 0 0 / 20%);
 }
 
 .meme--form--input {
@@ -109,6 +111,7 @@
   border-radius: 3px;
   border: 2px solid black;
   margin: 0 auto;
+  box-shadow: 10px 33px 5px rgb(0 0 0 / 20%);
 }
 
 .meme--text {
@@ -156,6 +159,7 @@
     'picture';
     display: flex;
     width: 100%;
+    padding: 5%;
   }
 
   .meme--form {

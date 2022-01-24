@@ -16,21 +16,23 @@ fetch(`https://swapi.dev/api/people/${count}`)
 
 return (
     <div className="starWars--api--container">
-        <pre>
-            {
-                JSON.stringify(starWarsData, null, 2)
-            }
-        </pre>
         <h2>
-            The count is {count}
+            Character nr. {count} : {starWarsData.name}
         </h2>
         <button 
+            className="sw--char--button"
             onClick={
                         () => setCount(prevCount => prevCount + 1)
                     }
         >
             Get next character
         </button>
+        <pre>
+            {
+                JSON.stringify(starWarsData, null, 2)
+            }
+        </pre>
+   
     </div>
 )
 }

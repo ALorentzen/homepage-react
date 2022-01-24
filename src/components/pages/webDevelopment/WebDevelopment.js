@@ -207,7 +207,18 @@
                                 src='/images/unsorted/starwars-logo.png' 
                                 alt='photo14364918653327a61a109cc05'
                             /> 
-                        <label>API</label>
+                             API
+                    </Link> 
+                </div>
+                <div 
+                    id="windowTracker--link--card--container"
+                    className='card-container'
+                >
+                    <Link 
+                        className='windowTracker--link' 
+                        to='/Tracker' 
+                    >
+                       Window tracker 
                     </Link> 
                 </div>
             </div>

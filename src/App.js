@@ -8,7 +8,7 @@ import {
         Landscape, Pixelart, Footer,
         TravelForm, MemeGenerator, 
         AirBnb, TravelComponent, 
-        ChangeBoxes, Form, StarWarsApi
+        ChangeBoxes, Form, StarWarsApi, Tracker
         }    
 from './index'
 
@@ -32,6 +32,7 @@ export default function App() {
                                 <Link path='/Form' element={<Form />}/>
                                 <Link path='/ExerciseForm' element={<ExerciseForm /> }/>
                                 <Link path='/StarWarsApi' element={<StarWarsApi /> }/>
+                                <Link path='/Tracker' element={<Tracker /> }/>
                             <Route path='/Portfolio' element={<Portfolio />} />
                                 <Route path='/Anders' element={<Anders />}  />
                                 <Route path='/Caricature' element={<Caricature />} />

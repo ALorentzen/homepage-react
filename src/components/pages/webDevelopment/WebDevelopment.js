@@ -221,6 +221,17 @@
                        Window tracker 
                     </Link> 
                 </div>
+                <div 
+                    id="notes--link--card--container"
+                    className='card-container'
+                >
+                    <Link 
+                        className='notes--link' 
+                        to='/Notes' 
+                    >
+                       Notes 
+                    </Link> 
+                </div>
             </div>
             
         )

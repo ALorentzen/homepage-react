@@ -232,6 +232,17 @@
                        Notes 
                     </Link> 
                 </div>
+                <div 
+                    id="notesApp--link--card--container"
+                    className='card-container'
+                >
+                    <Link 
+                        className='notesApp--link' 
+                        to='/NotesApp' 
+                    >
+                       Notes App 
+                    </Link> 
+                </div>
             </div>
             
         )

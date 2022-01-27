@@ -22,6 +22,7 @@ export { default as Form } from './components/projects/form/Form'
 export { default as StarWarsApi } from './components/projects/starWarsApi/StarWarsApi'
 export { default as Tracker } from './components/projects/windowTracker/Tracker'
 export { default as Notes } from './components/projects/notes/Notes'
+export { default as NotesApp } from './components/projects/notesApp/NotesApp'
 export { default as Nav} from './components/nav/Nav'
 export { default as Footer} from './components/footer/Footer'
 

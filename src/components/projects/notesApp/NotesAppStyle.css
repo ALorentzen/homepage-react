@@ -1,0 +1,91 @@
+/*Link to NotesApp--component*/
+
+    #notesApp--link--card--container {
+    
+    }
+
+    .notesApp--link {
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+      
+        height: 300px;
+    
+        color: black;
+        font-size: 30px;
+        text-align: center;
+    
+        margin: 0 auto;
+        width: 100%;
+    
+        align-items: center;
+        height: inherit;
+    }
+
+
+/*NotesApp--Component*/    
+    #notesApp--container {
+        display: grid;
+        position: relative;
+        top: 100px;
+        grid-template-columns: 200px 100% ;
+        grid-template-areas: 'sidebar editor';
+        height: 100vh;    
+        z-index: -100;   
+    }
+
+/*NotesApp--Sidebar*/
+
+    #notesApp--sidebar{
+        display: flex;
+        grid-area: sidebar;
+        flex-direction: column;
+        width: 200px;
+        min-height: 100vh;
+        background: #fff;
+    }
+
+    .sidebar--add--button {
+        position: relative;
+        width: 100%;
+        height: 50px;
+        margin: 50px 0;
+        color: #fff;
+        font-size: 20px;
+        font-family: 'Inter', verdana;
+        text-transform: uppercase;
+        background: #1e2833;
+        border: none;
+    }
+
+    .sidebar--add--button:hover {
+        cursor: pointer;
+    }
+
+    .sidebar--items--list {
+        color: #fff;
+        font-size: 20px;
+        font-family: 'Inter', verdana;
+        text-align: center;
+        height: 50px;
+        background: #1e2833;
+    }
+
+    .sidebar--items--list li {
+        display: flex;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 50px;
+        text-align: center;
+    }
+
+/*NotesApp--editor*/
+
+    .notesApp--editor {
+        grid-area: editor;
+        background: plum;
+        height: 100vh
+    }

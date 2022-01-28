@@ -23,6 +23,11 @@
   padding: 20px;
 }
 
+#meme--main--container {
+  background-color: #1e2833;
+  height: 100vh;
+}
+
 .header--image {
   height: 100%;
   margin-right: 6px;
@@ -57,7 +62,6 @@
   margin: 0 auto;
   padding: 0 20% 0 20%;
   border-radius: 4px;
-  box-shadow: 10px 33px 5px rgb(0 0 0 / 20%);
 }
 
 .meme--form--input {
@@ -111,7 +115,6 @@
   border-radius: 3px;
   border: 2px solid black;
   margin: 0 auto;
-  box-shadow: 10px 33px 5px rgb(0 0 0 / 20%);
 }
 
 .meme--text {

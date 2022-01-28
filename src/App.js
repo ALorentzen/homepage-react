@@ -18,8 +18,8 @@ export default function App() {
         <Router >
             <div className='app'>
                 <Nav />
-                    <div id='main' 
-                         className='main' 
+                    <div id='app--main' 
+                         className='app--main' 
                     >
                         <Routes>
                             <Route path='/' exact element={<Home/>} />

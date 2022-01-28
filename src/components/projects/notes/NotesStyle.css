@@ -133,7 +133,7 @@ nav.dark .toggler--slider {
 }
 
 /* MAIN styles */
-main {
+#notes--main--container {
     padding: 57px 27px;
     background-image: url("./react-icon-light.png"); 
     background-repeat: no-repeat;
@@ -147,7 +147,7 @@ main {
     align-content: center;
 }
 
-main.dark {
+#notes--main--container.dark {
     background-image: url("./react-icon-dark.png");  
     background-color: #282D35;
     color: white;    

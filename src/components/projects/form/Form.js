@@ -22,7 +22,7 @@ export default function Form() {
                    [name]: type === "checkbox" ? checked : value   
                }  
            })
-   }
+        }
         function handleSubmit(event) {
             event.preventDefault()
             console.log(formData)

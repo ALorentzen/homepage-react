@@ -85,7 +85,44 @@
 /*NotesApp--editor*/
 
     .notesApp--editor {
+        display: flex;
+        flex-direction: column;
         grid-area: editor;
         background: plum;
-        height: 100vh
+        height: 100vh;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    .notesApp--textbox {
+        width: 60vw;
+        height: 60vh;
+        font-size: 50px;
+        margin: 0 auto;
+    }
+
+  
+
+    .editor--save--button  {
+        width: 200px;
+        height: 60px;
+        position: relative;
+        margin: 20px auto;
+        border: 0px;
+        border-radius: 2px;
+        box-shadow: 0 4px 5px black;
+
+        background: #1e2833;
+
+        color: white;
+        font-size: 20px;
+        font-family: 'Inter', Verdana;
+        text-transform: uppercase;
+    }
+
+    .editor--save--button:active {
+        box-shadow: 0 1px 1px rgba(0,0,0 ,0);
+        border-style: inset;
+        border: 2px solid rgba(0,0,0 ,0.2);
+        
     }

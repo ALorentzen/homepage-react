@@ -244,7 +244,11 @@
                         className='notesApp--link' 
                         to='/NotesApp' 
                     >
-                       Notes App 
+                       <h5>Notes App</h5>
+                       <img 
+                            src={require("../../projects/notesApp/images/2966653421554126472-128.png").default} 
+                            alt='2966653421554126472-128'
+                       /> 
                     </Link> 
                 </div>
 

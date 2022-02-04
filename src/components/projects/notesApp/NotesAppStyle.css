@@ -1,7 +1,7 @@
 /*Link to NotesApp--component*/
 
     #notesApp--link--card--container {
-    
+        background: rgb(49, 0, 128);
     }
 
     .notesApp--link {
@@ -12,7 +12,8 @@
       
         height: 300px;
     
-        color: black;
+        color: rgb(165, 114, 216);
+        font-family: 'Poppins';
         font-size: 30px;
         text-align: center;
     
@@ -21,6 +22,20 @@
     
         align-items: center;
         height: inherit;
+    }
+
+    .notesApp--link h5 {
+        font-family: "Poppins", sans-serif;
+        z-index: 10;
+    }
+
+    .notesApp--link img {
+        position: absolute;
+        z-index: 0;
+        object-fit: fill;
+        width: 100%;
+        padding: 5%;
+        filter: opacity(30%)
     }
 
 

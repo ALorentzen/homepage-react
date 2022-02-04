@@ -6,7 +6,7 @@
     align-items: center;
     justify-content: center;
     height: 300px;
-    color: tomato;
+    color: white;
     font-family: 'Poppins',sans-serif;
     font-size: 30px;
     text-align: center;
@@ -15,6 +15,17 @@
     align-items: center;
     height: inherit;
     padding: 5%;
+    background: lightcoral;
+    z-index: 5;
+}
+
+.contactApp--link img {
+    width: 250px;
+    padding: 50px;
+    position: absolute;
+    z-index: -10;
+    filter: opacity(0.3);
+    object-fit: fill;
 }
 
 /*CONTACT--COMPONENT*/
@@ -23,4 +34,77 @@
     display: flex;
     position: relative;
     top: 100px;
+    width: 100%;
+    min-height: 100vh;
 }
+
+.contactApp--card--container h5 {
+    color: tomato;
+    font-size: 40px ;
+}
+
+.contactApp--content {
+    display: flex;
+    width: 100%;
+    background-color: black;
+    margin: 0 auto;
+
+}
+
+.contact--card {
+    width: 300px;
+    background: white;
+    margin: 0 auto;
+    border-radius: 10px;
+    color: tomato;
+    flex-basis: 265px;
+    box-shadow: 2px 2px 15px black;
+}
+
+.contact--card h3 {
+    text-align: center;
+    margin: 30px;
+}
+
+.contact--card p {
+    color: tomato;
+    text-size-adjust: 1em;
+}
+
+.contact--img--div {
+    width: 300px; 
+    height: 300px;
+    overflow: hidden;
+}
+
+.dog--img {
+    object-fit: cover;
+    width: 300px;
+    height: inherit;
+    position: relative;
+    border-radius: 10px 10px 0 0;
+}
+
+.contactApp--content {
+    color: tomato;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    float: left;
+    gap: 40px;
+    padding: 5%;
+    background-color: lightcoral;
+}
+
+.info-group {
+    padding: 5%;
+}
+
+.info-group img {
+    display: flex;
+    position: relative;
+    margin: 10px auto;
+    justify-self: center;
+    padding: 2%;
+}
+

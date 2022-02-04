@@ -1,27 +1,29 @@
 import React from 'react'
-import contactData from '../contactData'
-export default function Contact() {
 
-
+export default function Contact(props) {
 
     return(
         <div 
-            className="contact-card"
-            key={contactData.id}
+            className="contact--card"
+            key={props.id}
         >
-            <img 
-                src={contactData.img} 
-                alt={contactData.name}
-            />
-            <h3>{contactData.name}</h3>
-        <div className="info-group">
-            <img src="./images/phone-icon.png" alt='phone-icon' />
-            <p>{contactData.phone}</p>
-        </div>
-        <div className="info-group">
-            <img src="./images/mail-icon.png" alt='mail-icon' />
-            <p>{contactData.email}</p>
-        </div>
+            <div className='contact--img--div'>
+                <img 
+                    className='dog--img'
+                    src={props.img} 
+                    alt={props.name}
+               />
+            </div>
+
+            <h3>{props.name}</h3>
+            <div className="info-group">
+                <img src={require('../images/phone-icon.png').default} alt='phone-icon' />
+                <p>{props.phone}</p>
+            </div>
+            <div className="info-group">
+                <img src={require("../images/mail-icon.png").default} alt='mail-icon' />
+                <p>{props.email}</p>
+            </div>
     </div>
     
     )

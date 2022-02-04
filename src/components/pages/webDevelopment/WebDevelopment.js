@@ -251,12 +251,18 @@
                 <div id='contactApp--card--container'
                      className='card-container'
                 >
+                      
                     <Link
                         className='contactApp--link'
                         to='/ContactApp'
                     >
-                        Contact app
+                       <h5>Contact app</h5>
+                       <img 
+                            src={require("../../projects/contact/images/img_74602.png").default}
+                            alt='img_74602.png'
+                        />
                     </Link>
+                  
                 </div>
             </div>
             

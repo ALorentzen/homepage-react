@@ -4,12 +4,12 @@ const contactData = [
         name: 'Mr.Whiskers',
         email: 'mrWizzKuzz@fur.co.uk',
         phone: '(212) 555-1234',
-        img: 'images/mr-whiskerson.png'
+        img: '../images/mr-whiskerson.png'
     },
     {
         id: 2,
         name: 'Dave',
-        email: 'legendDave@catNip.com',
+        email: 'legendDave@dawwg.com',
         phone: '(215) 123-3344',
         img: './images/mr-whiskerson.png'
     },

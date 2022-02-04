@@ -1,5 +1,6 @@
     import React from 'react'
     import './webDevelopmentStyle.css'
+
     import {  AddItem, Card, Counter, 
               RoundedImg, Todo, CTA,
               Callout, ChangeBoxes
@@ -9,7 +10,7 @@
         import { Link } from 'react-router-dom'
 
 
-    function WebDevelopment() {
+    export default function WebDevelopment() {
         return (
             <div className='webDev--container' >
     
@@ -147,11 +148,11 @@
                     className='card-container'
                 >
                     <Link 
-                        className='airBnb-link' 
-                        to='/TravelComponent'
+                        className='airBnb--link' 
+                        to='/AirBnb'
                     >
                         <img 
-                            className='airBnb-link--img' 
+                            className='airBnb--link--img' 
                             src='./images/icons/Airbnb_Logo_Bélo.svg.png' 
                             alt='airBnb-link'
                         />
@@ -210,6 +211,7 @@
                              API
                     </Link> 
                 </div>
+
                 <div 
                     id="windowTracker--link--card--container"
                     className='card-container'
@@ -221,6 +223,7 @@
                        Window tracker 
                     </Link> 
                 </div>
+
                 <div 
                     id="notes--link--card--container"
                     className='card-container'
@@ -232,6 +235,7 @@
                        Notes 
                     </Link> 
                 </div>
+
                 <div 
                     id="notesApp--link--card--container"
                     className='card-container'
@@ -243,10 +247,21 @@
                        Notes App 
                     </Link> 
                 </div>
+
+                <div id='contactApp--card--container'
+                     className='card-container'
+                >
+                    <Link
+                        className='contactApp--link'
+                        to='/ContactApp'
+                    >
+                        Contact app
+                    </Link>
+                </div>
             </div>
             
         )
     }
 
 
-    export default WebDevelopment
+  

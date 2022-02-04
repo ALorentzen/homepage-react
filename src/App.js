@@ -6,9 +6,9 @@ import {
         Portfolio, About, Anders, 
         Characters, Caricature, Jerven,
         Landscape, Pixelart, Footer,
-        TravelForm, MemeGenerator, 
-        AirBnb, TravelComponent, 
-        ChangeBoxes, Form, StarWarsApi, Tracker, Notes, NotesApp
+        TravelForm, MemeGenerator,  
+        ChangeBoxes, Form, StarWarsApi, 
+        Tracker, Notes, NotesApp, AirBnb, ContactApp
         }    
 from './index'
 
@@ -25,9 +25,8 @@ export default function App() {
                             <Route path='/' exact element={<Home/>} />
                             <Route path='/WebDevelopment' element={<WebDevelopment />} />  
                                 <Link path='/TravelForm' element={<TravelForm />} />
-                                <Link path='/AirBnb' element={ <AirBnb /> } />
+                                <Link path='/AirBnb' element={<AirBnb />} />
                                 <Link path='/MemeGenerator' element={<MemeGenerator />} />
-                                <Link path='/TravelComponent' element={<TravelComponent />}/>
                                 <Link path='/ChangeBoxes' element={<ChangeBoxes /> }/>
                                 <Link path='/Form' element={<Form />}/>
                                 <Link path='/ExerciseForm' element={<ExerciseForm /> }/>
@@ -42,6 +41,7 @@ export default function App() {
                                 <Route path='/Jerven' element={<Jerven />} />
                                 <Route path='/Landscape' element={<Landscape />} />
                                 <Route path='/Pixelart' element={<Pixelart />} />
+                                <Route path='ContactApp' element={<ContactApp/>}/>
                             <Route path='/About' element={<About />} />
                         </Routes>
                     </div>

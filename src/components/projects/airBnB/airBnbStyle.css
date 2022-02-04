@@ -1,79 +1,130 @@
-/*AIR-BNB-COMPONENT*/
-
-.airBnB--nav {
-  height: 70px;
-  top: 90px;
-  display: flex;
-  padding: 20px 36px;
-  box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 1);
-  background: white;
-  z-index: 0;
+.grey {
+    color: #918E9B;
 }
 
-.airbnb--nav--img {
-  max-width: 150px;
+.bold {
+    font-weight: bold;
+    color: black;
 }
+
+/*LINK TO COMPONENT*/
+
+.airBnb--link {
+    width: 200px;
+    height: 300px;
+}
+
+.airBnb--link--img {
+    position: relative;
+    object-fit: contain;
+    width: 100%;
+}
+
+/*MAIN--CONTAINER*/
 
 .airBnb--container {
-  display: block;
-  width: 100%;
-  margin: 20px auto;
-  background: white;
+    display: grid;
+    grid-template-areas: 
+    'nav'  
+    'hero'
+    'card';
+    position: relative;
+    top: 10%;
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(247, 247, 247);
 }
 
-.airBnb-link {
-  grid-area: 3/3 / 3/3;
-  display: flex;
-  margin: auto;
-  width: 200px;
-  height: 300px;
-  background: #fff;
-  border: 2px solid black;
-  border-radius: 15px;
-  overflow: hidden;
+/*AirBnbNav*/
+
+.airBnb--nav {
+    grid-area: nav;
+    position: relative;
+    width: 100%;
+    height: 80px;
+    background: #fff;
 }
 
-.airBnb-link--img {
-  width: 150px;
-  object-fit: contain;
-  justify-content: center;
-  margin: auto;
+.airBnb--nav--img {
+    width: 150px;
+    height: auto;
+    margin-left: 10px;
 }
 
-.airBnb--hero--container {
-  padding: 20px;
-  font-family: "Poppins", sans-serif;
-  z-index: 0;
+
+/*Hero*/
+
+.hero--container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: rgb(114 64 64);
 }
 
-.airBnb--hero-img {
-  display: flex;
-  position: relative;
-  max-width: 70%;
-  margin: 0 auto;
-  padding: 2%;
-  object-fit: contain;
+.hero--container h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 46px;
+    color: burlywood;
+    padding-left: 20px;
+    align-self: flex-start;
 }
 
-.airBnb--hero-textDiv {
-  display: block;
-  width: 68%;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
+.hero--container p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: rgb(213 176 117);
+    align-self: flex-start;
+    padding: 20px
 }
 
-.airBnb--hero--text {
-  justify-content: center;
-  font-size: 36px;
+.hero--image {
+    max-width: 500px;
+    height: auto;
+    padding: 5%;
+    align-self: center;
 }
 
-.airBnb--hero--para {
-  color: black;
-  text-overflow: clip;
-  width: 90%;
-  font-size: 20px;
-  line-height: 0.9;
-  font-style: italic;
-  font-weight: 100;
+/*CARD-COMPONENT*/
+
+.card--container {
+    width: 175px;
+    grid-area: card;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background: rgb(245, 217, 222);
+    padding: 1%;
+    font-size: 12px;
+}
+
+.card--stats {
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+span {
+    color: #724040;
+}
+
+.cage--img {
+
+    border-radius: 20px;
+}
+
+.star--logo {
+    width: 25px;
+}
+
+@media only screen and (min-device-width: 700px) {
+.airBnb--container {
+    width: 100%;
+}
+
+@media only screen and (min-device-width: 1200px) {
+    .airBnb--container {
+        width: 50%;
+        margin: 0 auto;
+    }
+}
 }

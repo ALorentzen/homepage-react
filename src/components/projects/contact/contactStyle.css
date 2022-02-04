@@ -1,0 +1,26 @@
+/*Contact--COMPONENT--LINK*/
+
+.contactApp--link {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    color: tomato;
+    font-family: 'Poppins',sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    align-items: center;
+    height: inherit;
+    padding: 5%;
+}
+
+/*CONTACT--COMPONENT*/
+
+.contactApp--container {
+    display: flex;
+    position: relative;
+    top: 100px;
+}
